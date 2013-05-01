@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/YourProfileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Your Profile"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/underYourProfileLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/YourProfileText"
+        android:src="@drawable/line"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/underYourProfileLine"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/profpic" />
+
+    <com.teamNFC.spartap.AutoResizeTextView
+        android:id="@+id/tName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ProfileImage"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/ProfileImage"
+        android:text="tName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tName"
+        android:layout_below="@+id/tName"
+        android:ems="10"
+        android:inputType="number"
+        android:text="000000000" />
+
+    <ImageView
+        android:id="@+id/rightLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ID"
+        android:layout_below="@+id/ID"
+        android:src="@drawable/rightlines" />
+
+    <ImageView
+        android:id="@+id/helmet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rightLine1"
+        android:layout_below="@+id/rightLine1"
+        android:src="@drawable/helmet" />
+
+    <ImageView
+        android:id="@+id/rightline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/helmet"
+        android:layout_below="@+id/helmet"
+        android:src="@drawable/rightlines" />
+    
+    <ImageView
+        android:id="@+id/rightline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/plume"
+        android:layout_below="@+id/plume"
+        android:src="@drawable/rightlines" />
+
+    <ImageView
+        android:id="@+id/plume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rightline2"
+        android:layout_below="@+id/rightline2"
+        android:src="@drawable/plume" />
+
+    <TextView
+        android:id="@+id/helmets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rightline2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/tName"
+        android:text="0"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/plume"
+        android:layout_toRightOf="@+id/tName"
+        android:text="@string/points"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bQRCheckIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="QR Check In" />
+
+</RelativeLayout>

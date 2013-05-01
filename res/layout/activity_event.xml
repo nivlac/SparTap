@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TITLE"
+        android:gravity="center"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decription"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="25dp"
+        android:text="Start Time"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="25dp"
+        android:text="End Time"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingTop="50dp"
+        android:text="Location"
+        android:gravity="center"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/bGoBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"
+        android:text="Go Back"
+        android:textStyle="bold" />
+
+</LinearLayout>
